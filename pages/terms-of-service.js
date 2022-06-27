@@ -8,7 +8,7 @@ const termsofService = () => {
         <Nav />
         <div className="tos-title">Terms of Service</div>
         <p className="tos-text">
-          THIS TRANSFER SERVICES AGREEMENT ("AGREEMENT") DEFINES THE TERMS AND
+          THIS TRANSFER SERVICES AGREEMENT (&ldquo;AGREEMENT&ldquo;) DEFINES THE TERMS AND
           CONDITIONS UNDER WHICH KAKITOO PROVIDES SERVICES TO YOU. THESE TERMS
           AND CONDITIONS AFFECT YOUR RIGHTS AND YOU SHOULD READ THEM CAREFULLY.
           BY ACCESSING AND USING THE KAKITOO SERVICES, YOU ACCEPT AND AGREE TO
@@ -81,8 +81,8 @@ const termsofService = () => {
           service; the funds you direct to Kakitoo to pay to the Receiver are
           not held as a deposit or in escrow by Kakitoo, and Kakitoo is not
           acting as a fiduciary in holding or processing your Transfer.
-          Kakitoo's only obligation is to pay your Transfer to the Receiver or
-          return the Transfer's principal amount to you.
+          Kakitoo&apos;s only obligation is to pay your Transfer to the Receiver or
+          return the Transfer&apos;s principal amount to you.
           <br />
           <br />
           4.3 The Service is available 24 hours a day, 365 days a year, although
@@ -170,7 +170,7 @@ const termsofService = () => {
           information or documentation provided by you or the Receiver,
           including any code or identifier number of the Transfer, without
           further investigation. Kakitoo reserves the right to refuse payment to
-          the Receiver if Kakitoo cannot verify the Receiver's identity or if
+          the Receiver if Kakitoo cannot verify the Receiver&apos;s identity or if
           Kakitoo believes you or the Receiver are in violation of this
           Agreement or any applicable law, regulation, or Kakitoo policy.
           Although Kakitoo has the right to establish identification and
@@ -201,7 +201,7 @@ const termsofService = () => {
           applicable origination country laws, and applicable Receiver country
           laws. You are only permitted to use the Kakitoo to send Transfers on
           your own behalf. You may not resell the Kakitoo or use the Service to
-          make Transfers on someone else's behalf or as an agent for someone
+          make Transfers on someone else&apos;s behalf or as an agent for someone
           else. You will provide information and/or documentation as requested
           by Kakitoo in order for Kakitoo to comply with any applicable laws,
           including anti-money laundering laws. Kakitoo reserves the right to
@@ -259,7 +259,7 @@ const termsofService = () => {
         <p className="tos-text">
           Kakitoo is not liable for any delay, failure to execute, or error in
           the execution of your Transfer request that is caused by circumstances
-          beyond Kakitoo's reasonable control, including strikes, power outages,
+          beyond Kakitoo&apos;s reasonable control, including strikes, power outages,
           equipment malfunctions, war, riots, governmental or court orders, work
           stoppages, or similar occurrences or circumstances, or incorrect or
           incomplete information provided by you. You also agree that Kakitoo
