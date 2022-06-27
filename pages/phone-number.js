@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "../comps/Nav";
-import Bolt from "../comps/Bolt";
 
 const phoneNumber = () => {
   return (
@@ -41,16 +40,35 @@ const phoneNumber = () => {
             <div className="title-text">We need your phone number</div>
           </div>
           <div className="sub-text">It links with your username</div>
-          <div className="form-registration">
+
+          <form className="form-registration" action="/otp">
+            <label className="text-input-heading" htmlFor="phone">
+              Enter the phone number
+            </label>
+            <input
+              className="text-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="0702072330"
+              pattern="[0,7]{2}[0-9]{8}"
+            />
+            <input className="link-block" type="submit" defaultValue="Next" />
+          </form>
+
+          {/* <div className="form-registration">
             <div className="text-input-heading">Enter your phone number</div>
             <input
-              type="text"
+              type="number"
               className="text-input w-input"
-              maxLength={256}
-              name="name-3"
-              data-name="Name 3"
-              placeholder=""
+              maxLength={10}
+              name="phone-number"
+              data-name="Phone Number 3"
+              placeholder="0712 345678"
               id="name-3"
+              minLength={10}
+              min="1"
+              max="5"
             />
             <label className="radio-button-field w-radio">
               <input
@@ -73,12 +91,10 @@ const phoneNumber = () => {
                 <div>Next</div>
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="pic-div">
-        <div className="hue-overlay" />
-        <div className="black-overlay" />
         <div className="bg-img">
           <Image src="/img3.png" alt="" width={450} height={550} />
         </div>
@@ -86,7 +102,6 @@ const phoneNumber = () => {
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
         </div>
-        <Bolt className="kakitoo-bolt w-embed" />
       </div>
     </div>
   );

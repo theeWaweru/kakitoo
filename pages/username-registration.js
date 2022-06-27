@@ -1,8 +1,6 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "../comps/Nav";
-import Bolt from "../comps/Bolt";
 
 export default function Home() {
   return (
@@ -42,7 +40,31 @@ export default function Home() {
             <div className="title-text">Welcome! First thing first...</div>
           </div>
           <div className="sub-text">Think of a unique username.</div>
-          <div className="form-registration">
+
+          <form className="form-registration" action="/phone-number">
+            <label className="text-input-heading" htmlFor="phone">
+              Enter the phone number
+            </label>
+            <input
+              className="text-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="0702072330"
+              pattern="[0,7]{2}[0-9]{8}"
+            />
+            <input className="link-block" type="submit" defaultValue="Next" />
+            <div className="text-link-div">
+              <Link href="/forgot-nickname">
+                <a className="text-link">Forgot Username?</a>
+              </Link>
+              <Link href="/delete-nickname">
+                <a className="text-link">Delete Username?</a>
+              </Link>
+            </div>
+          </form>
+
+          {/* <div className="form-registration">
             <div className="text-input-heading">Enter the Username</div>
             <input
               type="text"
@@ -58,20 +80,11 @@ export default function Home() {
                 <div>Next</div>
               </a>
             </Link>
-            <div className="text-link-div">
-              <Link href="/forgot-nickname">
-                <a className="text-link">Forgot Username?</a>
-              </Link>
-              <Link href="/delete-nickname">
-                <a className="text-link">Delete Username?</a>
-              </Link>
-            </div>
-          </div>
+            
+          </div> */}
         </div>
       </div>
       <div className="pic-div">
-        <div className="hue-overlay" />
-        <div className="black-overlay" />
         <div className="bg-img">
           <Image src="/img2.png" alt="" width={450} height={550} />
         </div>
@@ -79,7 +92,6 @@ export default function Home() {
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
         </div>
-        <Bolt className="kakitoo-bolt w-embed" />
       </div>
     </div>
   );

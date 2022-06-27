@@ -4,7 +4,15 @@ import Nav from "../comps/Nav";
 const Unknown = () => {
   return (
     <div className="body-div">
-      <h1>404</h1>
+      <div className="_404-div">
+        <Nav />
+        <div>Privacy as a Service</div>
+        <div className="_404-block">
+          <div>404</div>
+          <div className="divider" />
+          <div>Page not Found</div>
+        </div>
+      </div>
     </div>
   );
 };

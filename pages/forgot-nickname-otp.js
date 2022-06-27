@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Nav from "../comps/Nav";
-import Bolt from "../comps/Bolt";
 import Image from "next/image";
 
 const forgotNicknameotp = () => {
@@ -62,8 +61,6 @@ const forgotNicknameotp = () => {
         </div>
       </div>
       <div className="pic-div">
-        <div className="hue-overlay" />
-        <div className="black-overlay" />
         <div className="bg-img">
           <Image src="/img7.png" alt="" width={450} height={550} />
         </div>
@@ -71,7 +68,6 @@ const forgotNicknameotp = () => {
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
         </div>
-        <Bolt className="kakitoo-bolt w-embed" />
       </div>
     </div>
   );

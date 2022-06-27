@@ -1,10 +1,6 @@
-import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import kakitooLogo from "../comps/Logo";
 import Nav from "../comps/Nav";
-import Bolt from "../comps/Bolt";
 
 export default function Home() {
   return (
@@ -32,7 +28,6 @@ export default function Home() {
         </div>
       </div>
       <div className="pic-div">
-        <div className="black-overlay" />
         <div className="bg-img">
           <Image src="/img1.png" alt="" width={450} height={550} />
         </div>
@@ -40,7 +35,6 @@ export default function Home() {
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
         </div>
-        <Bolt className="kakitoo-bolt w-embed" />
         <Link href="/username-registration">
           <a className="link-block w-inline-block">
             <div>Get a Username</div>
