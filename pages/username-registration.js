@@ -1,41 +1,77 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import kakitooLogo from "../comps/Logo";
 import Nav from "../comps/Nav";
 
 export default function Home() {
   return (
     <div className="body-div">
-      <div className="deets-div">
-        <Nav />
-        <div className="main-text">
-          Provides <span className="colored-text">privacy as a service</span> to
-          Mpesa customers
-        </div>
-        <div className="sec-text">
-          The safest way to send Mpesa to someone and hide your mobile number
-          and name.
-        </div>
-        <div className="div-block">
-          <img
-            src="images/phone-with-number.png"
-            loading="lazy"
-            alt=""
-            className="phone-img"
-          />
-          <div>
-            <div className="title-text">Call *384*6#</div>
-            <div className="sec-text">
-              To tip or send someone Mpesa and hide your number and name.
+      <div className="details-div">
+        <div className="details-div-holder">
+          <Nav />
+          <div className="process-timeline">
+            <div className="number-div">
+              <div className="number current">
+                <div>1</div>
+              </div>
+              <div className="number-line current" />
+            </div>
+            <div className="number-div">
+              <div className="number-line" />
+              <div className="number">
+                <div>2</div>
+              </div>
+              <div className="number-line" />
+            </div>
+            <div className="number-div">
+              <div className="number-line" />
+              <div className="number">
+                <div>3</div>
+              </div>
+              <div className="number-line" />
+            </div>
+            <div className="number-div">
+              <div className="number-line" />
+              <div className="number">
+                <div>4</div>
+              </div>
+            </div>
+          </div>
+          <div className="title-div">
+            <div className="title-text">Welcome! First thing first...</div>
+          </div>
+          <div className="sub-text">Think of a unique username.</div>
+          <div className="form-registration">
+            <div className="text-input-heading">Enter the Username</div>
+            <input
+              type="text"
+              className="text-input w-input"
+              maxLength={256}
+              name="name-3"
+              data-name="Name 3"
+              placeholder=""
+              id="name-3"
+            />
+            <Link href="/phone-number">
+              <a className="link-block form-submit w-inline-block">
+                <div>Next</div>
+              </a>
+            </Link>
+            <div className="text-link-div">
+              <Link href="/forgot-nickname">
+                <a className="text-link">Forgot Username?</a>
+              </Link>
+              <Link href="/delete-nickname">
+                <a className="text-link">Delete Username?</a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="pic-div">
+        <div className="hue-overlay" />
         <div className="black-overlay" />
-        <img src="images/img1.png" loading="lazy" alt="" className="bg-img" />
+        <img src="images/img2.png" loading="lazy" alt="" className="bg-img" />
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
@@ -90,11 +126,6 @@ export default function Home() {
             </defs>
           </svg>
         </div>
-        <Link href="/username-registration">
-          <a className="link-block w-inline-block">
-            <div>Get a Username</div>
-          </a>
-        </Link>
       </div>
     </div>
   );

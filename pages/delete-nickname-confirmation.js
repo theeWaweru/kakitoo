@@ -1,41 +1,37 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import kakitooLogo from "../comps/Logo";
 import Nav from "../comps/Nav";
+import Link from "next/link";
 
-export default function Home() {
+const deleteNicknameConfirmation = () => {
   return (
     <div className="body-div">
-      <div className="deets-div">
-        <Nav />
-        <div className="main-text">
-          Provides <span className="colored-text">privacy as a service</span> to
-          Mpesa customers
-        </div>
-        <div className="sec-text">
-          The safest way to send Mpesa to someone and hide your mobile number
-          and name.
-        </div>
-        <div className="div-block">
-          <img
-            src="images/phone-with-number.png"
-            loading="lazy"
-            alt=""
-            className="phone-img"
-          />
-          <div>
-            <div className="title-text">Call *384*6#</div>
-            <div className="sec-text">
-              To tip or send someone Mpesa and hide your number and name.
+      <div className="details-div">
+        <div className="details-div-holder">
+          <Nav />
+          <div className="title-div with-margin">
+            <div className="title-text">
+              Your Username is{" "}
+              <span className="title-text username">xxxxxxx</span>
             </div>
+          </div>
+          <div className="sub-text">Are you sure you want to delete</div>
+          <div className="delete-name-form">
+            <Link href="/username-registration">
+              <a className="link-block no-btn w-inline-block">
+                <div>No</div>
+              </a>
+            </Link>
+            <Link href="delete-nickname-finish">
+              <a className="link-block yes-btn w-inline-block">
+                <div>Yes</div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="pic-div">
+        <div className="hue-overlay" />
         <div className="black-overlay" />
-        <img src="images/img1.png" loading="lazy" alt="" className="bg-img" />
+        <img src="images/img11.png" loading="lazy" alt="" className="bg-img" />
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
@@ -90,12 +86,9 @@ export default function Home() {
             </defs>
           </svg>
         </div>
-        <Link href="/username-registration">
-          <a className="link-block w-inline-block">
-            <div>Get a Username</div>
-          </a>
-        </Link>
       </div>
     </div>
   );
-}
+};
+
+export default deleteNicknameConfirmation;

@@ -1,41 +1,68 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import kakitooLogo from "../comps/Logo";
 import Nav from "../comps/Nav";
 
-export default function Home() {
+const forgotNicknameotp = () => {
   return (
     <div className="body-div">
-      <div className="deets-div">
-        <Nav />
-        <div className="main-text">
-          Provides <span className="colored-text">privacy as a service</span> to
-          Mpesa customers
-        </div>
-        <div className="sec-text">
-          The safest way to send Mpesa to someone and hide your mobile number
-          and name.
-        </div>
-        <div className="div-block">
-          <img
-            src="images/phone-with-number.png"
-            loading="lazy"
-            alt=""
-            className="phone-img"
-          />
-          <div>
-            <div className="title-text">Call *384*6#</div>
-            <div className="sec-text">
-              To tip or send someone Mpesa and hide your number and name.
+      <div className="details-div">
+        <div className="details-div-holder">
+          <Nav />
+          <div className="title-div with-margin">
+            <div className="title-text">You will receive an SMS</div>
+          </div>
+          <div className="sub-text">It's to confirm your number</div>
+          <div className="form-registration">
+            <div className="text-input-heading">Enter your OTP</div>
+            <div className="numerical-text-div">
+              <input
+                type="text"
+                className="numerical-text-field w-input"
+                maxLength={256}
+                name="name-3"
+                data-name="Name 3"
+                placeholder=""
+                id="name-3"
+              />
+              <input
+                type="text"
+                className="numerical-text-field w-input"
+                maxLength={256}
+                name="name-3"
+                data-name="Name 3"
+                placeholder=""
+                id="name-3"
+              />
+              <input
+                type="text"
+                className="numerical-text-field w-input"
+                maxLength={256}
+                name="name-3"
+                data-name="Name 3"
+                placeholder=""
+                id="name-3"
+              />
+              <input
+                type="text"
+                className="numerical-text-field w-input"
+                maxLength={256}
+                name="name-3"
+                data-name="Name 3"
+                placeholder=""
+                id="name-3"
+              />
             </div>
+            <Link href="/forgot-nickname-finish-registration">
+              <a className="link-block form-submit w-inline-block">
+                <div>Next</div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="pic-div">
+        <div className="hue-overlay" />
         <div className="black-overlay" />
-        <img src="images/img1.png" loading="lazy" alt="" className="bg-img" />
+        <img src="images/img7.png" loading="lazy" alt="" className="bg-img" />
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your
           phone number when someone sends you Mpesa on Kakitoo.
@@ -90,12 +117,9 @@ export default function Home() {
             </defs>
           </svg>
         </div>
-        <Link href="/username-registration">
-          <a className="link-block w-inline-block">
-            <div>Get a Username</div>
-          </a>
-        </Link>
       </div>
     </div>
   );
-}
+};
+
+export default forgotNicknameotp;
