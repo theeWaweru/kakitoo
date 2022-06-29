@@ -41,17 +41,18 @@ export default function Home() {
           </div>
           <div className="sub-text">Think of a unique username.</div>
 
-          <form className="form-registration" action="/phone-number">
-            <label className="text-input-heading" htmlFor="phone">
-              Enter the phone number
+          <form className="form-registration" action="/phone-number" id="username-reg">
+            <label className="text-input-heading" htmlFor="#username-reg">
+              Enter the username
             </label>
             <input
               className="text-input"
               type="tel"
               id="phone"
               name="phone"
-              placeholder="0702072330"
-              pattern="[0,7]{2}[0-9]{8}"
+              placeholder="e.g Job24"
+              pattern="[a-z]{3}[a-z,0-9]{0-7}"
+              minLength={4}
             />
             <input className="link-block" type="submit" defaultValue="Next" />
             <div className="text-link-div">

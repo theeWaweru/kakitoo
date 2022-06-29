@@ -17,7 +17,12 @@ export default function Home() {
         </div>
         <div className="div-block">
           <div className="phone-img">
-            <Image src="/phone-with-number.png" alt="" width={140} height={276}/>
+            <Image
+              src="/phone-with-number.png"
+              alt=""
+              width={140}
+              height={276}
+            />
           </div>
           <div>
             <div className="title-text">Call *384*6#</div>
