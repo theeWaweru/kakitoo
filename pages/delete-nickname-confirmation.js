@@ -31,7 +31,7 @@ const deleteNicknameConfirmation = () => {
       </div>
       <div className="pic-div">
         <div className="bg-img">
-          <Image src="/img11.png" alt="" width={450} height={550} />
+          <Image src="/img11.png" alt="" layout="fill" objectFit="cover" />
         </div>
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your

@@ -2,15 +2,7 @@ import Link from "next/link";
 import Nav from "../comps/Nav";
 import Image from "next/image";
 import React, { Component } from "react";
-import OtpInput from "react-otp-input";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import App from "./otpjs";
 
 const otp = () => {
   return (
@@ -53,28 +45,7 @@ const otp = () => {
 
           <form className="form-registration">
             <div className="text-input-heading">Enter your OTP</div>
-
-            <OtpInput
-              numInputs={4}
-              inputStyle={{
-                border: "1px solid #4d4d4d",
-                borderRadius: "8px",
-                width: "60px",
-                height: "48px",
-                color: "#000000",
-                fontWeight: "400",
-                caretColor: "#f7931e",
-                fontSize: "16px",
-                fontFamily: "Product Sans",
-                fontWeight: "400",
-                margin: "7px 20px 16px 0",
-              }}
-              focusStyle={{
-                border: "1px solid #f7931e",
-                outline: "none",
-              }}
-            />
-
+            <App />
             {/* <Button
               type="submit"
               fullWidth
@@ -94,7 +65,7 @@ const otp = () => {
       </div>
       <div className="pic-div">
         <div className="bg-img">
-          <Image src="/img4.png" alt="" width={450} height={550} />
+          <Image src="/img4.png" alt="" layout="fill" objectFit="cover" />
         </div>
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your

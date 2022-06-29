@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Nav from "../comps/Nav";
 import Image from "next/image";
+import App from "./otpjs";
 
 const forgotNicknameotp = () => {
   return (
@@ -12,57 +13,29 @@ const forgotNicknameotp = () => {
             <div className="title-text">You will receive an SMS</div>
           </div>
           <div className="sub-text">It&apos;s to confirm your number</div>
-          <div className="form-registration">
+          <form className="form-registration">
             <div className="text-input-heading">Enter your OTP</div>
-            <div className="numerical-text-div">
-              <input
-                type="text"
-                className="numerical-text-field w-input"
-                maxLength={256}
-                name="name-3"
-                data-name="Name 3"
-                placeholder=""
-                id="name-3"
-              />
-              <input
-                type="text"
-                className="numerical-text-field w-input"
-                maxLength={256}
-                name="name-3"
-                data-name="Name 3"
-                placeholder=""
-                id="name-3"
-              />
-              <input
-                type="text"
-                className="numerical-text-field w-input"
-                maxLength={256}
-                name="name-3"
-                data-name="Name 3"
-                placeholder=""
-                id="name-3"
-              />
-              <input
-                type="text"
-                className="numerical-text-field w-input"
-                maxLength={256}
-                name="name-3"
-                data-name="Name 3"
-                placeholder=""
-                id="name-3"
-              />
-            </div>
-            <Link href="/forgot-nickname-finish-registration">
+            <App />
+            {/* <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className="link-block form-submit"
+            >
+              Next
+            </Button> */}
+            <Link href="/finish-registration">
               <a className="link-block form-submit w-inline-block">
                 <div>Next</div>
               </a>
             </Link>
-          </div>
+          </form>
         </div>
       </div>
       <div className="pic-div">
         <div className="bg-img">
-          <Image src="/img7.png" alt="" width={450} height={550} />
+          <Image src="/img7.png" alt="" layout="fill" objectFit="cover" />
         </div>
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your

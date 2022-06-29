@@ -8,11 +8,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
       <OtpInput
         value={code}
         onChange={handleChange}
-        numInputs={6}
+        numInputs={4}
         separator={<span style={{ width: "8px" }}></span>}
         isInputNum={true}
         shouldAutoFocus={true}
@@ -21,19 +20,19 @@ export default function App() {
           borderRadius: "8px",
           width: "60px",
           height: "48px",
-          color: "red",
+          color: "#f7931e",
           fontWeight: "400",
           caretColor: "#f7931e",
           fontSize: "16px",
-          fontFamily:'Product Sans',
+          fontFamily: "Product Sans",
           fontWeight: "400",
+          margin: "7px 20px 16px 0",
         }}
         focusStyle={{
           border: "1px solid #f7931e",
           outline: "none",
         }}
       />
-      <h2>Start editing to see some magic happen!</h2>
     </div>
   );
 }

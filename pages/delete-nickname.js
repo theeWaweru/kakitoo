@@ -15,28 +15,53 @@ const deleteNickname = () => {
             </div>
           </div>
           <div className="sub-text">Don&apos;t worry we&apos;ve got you</div>
-          <div className="form-registration">
-            <div className="text-input-heading">Enter your phone number</div>
-            <input
-              type="text"
-              className="text-input w-input"
-              maxLength={256}
-              name="name-3"
-              data-name="Name 3"
-              placeholder=""
-              id="name-3"
-            />
-            <Link href="delete-nickname-otp">
-              <a className="link-block form-submit w-inline-block">
-                <div>Next</div>
-              </a>
-            </Link>
+          <div className="w-form form-registration">
+            <form
+              id="phone-deregistration-form"
+              name="Phone-Deregistration-Form"
+              data-name="Phone Deregistration Form"
+              method="post"
+              action="/otp"
+            >
+              <label className="text-input-heading" htmlFor="phone-number">
+                Enter your phone number
+              </label>
+              <input
+                type="number"
+                maxLength={10}
+                minLength={10}
+                name="User Phone Number"
+                data-name="phone-number"
+                id="phone-number"
+                className="text-input w-input"
+                placeholder="e.g 0702123456"
+                pattern="[0-9]{2}[0-9]{8}"
+                required=""
+                autoFocus="true"
+              />
+              <input
+                type="submit"
+                defaultValue="Next"
+                data-wait="Please wait..."
+                className="submit-button w-button link-block form-submit"
+              />
+            </form>
+            <div className="success-message w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div className="error-message w-form-fail">
+              <div>
+                Oops! Something went wrong.
+                <br />
+                Check your details and try again.
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="pic-div">
         <div className="bg-img">
-          <Image src="/img9.png" alt="" width={450} height={550} />
+          <Image src="/img9.png" alt="" layout="fill" objectFit="cover" />
         </div>
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your

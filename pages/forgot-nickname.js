@@ -15,13 +15,17 @@ const forgotNickname = () => {
           <div className="form-registration">
             <div className="text-input-heading">Enter your phone number</div>
             <input
-              type="text"
+              type="number"
+              maxLength={10}
+              minLength={10}
+              name="User Phone Number"
+              data-name="phone-number"
+              id="phone-number"
               className="text-input w-input"
-              maxLength={256}
-              name="name-3"
-              data-name="Name 3"
-              placeholder=""
-              id="name-3"
+              placeholder="e.g 0702123456"
+              pattern="[0-9]{10}"
+              required=""
+              autoFocus="true"
             />
             <Link href="/forgot-nickname-otp">
               <a className="link-block form-submit w-inline-block">
@@ -33,7 +37,7 @@ const forgotNickname = () => {
       </div>
       <div className="pic-div">
         <div className="bg-img">
-          <Image src="/img6.png" alt="" width={450} height={550} />
+          <Image src="/img6.png" alt="" layout="fill" objectFit="cover" />
         </div>
         <div className="pic-div-text">
           Get a Kakitoo <span className="bolded">Username</span> to hide your
