@@ -102,43 +102,6 @@ const phoneNumber = () => {
               </div>
             </div>
           </div>
-
-          {/* this is a line break  */}
-
-          {/* <form className="form-registration">
-            <div className="text-input-heading">Enter your phone number</div>
-            <input
-              className="text-input w-input"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="e.g 0712345678"
-              pattern="[0-9]{10}"
-            />
-            <label className="radio-button-field w-radio">
-              <input
-                type="radio"
-                data-name="Radio"
-                id="radio"
-                name="radio"
-                defaultValue="Radio"
-                className="w-form-formradioinput radio-circle w-radio-input"
-              />
-              <span className="radio-button-label w-form-label" htmlFor="radio">
-                Agree to
-              </span>
-              <Link href="/terms-of-service">
-                <a className="text-link">Terms of Service</a>
-              </Link>
-            </label>
-            <Link href="/otp">
-              <a className="link-block form-submit w-inline-block">
-                <div>Next</div>
-              </a>
-            </Link>
-          </form> */}
-
-          {/* this above is a deletable form */}
         </div>
       </div>
       <div className="pic-div">

@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Nav from "../comps/Nav";
 import Image from "next/image";
-import React, { Component } from "react";
-import App from "./otpjs";
+import App from "./otp-app";
 
 const otp = () => {
   return (
@@ -45,16 +44,10 @@ const otp = () => {
 
           <form className="form-registration">
             <div className="text-input-heading">Enter your OTP</div>
+            
+            {/* this is the OTP app below */}
             <App />
-            {/* <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className="link-block form-submit"
-            >
-              Next
-            </Button> */}
+
             <Link href="/finish-registration">
               <a className="link-block form-submit w-inline-block">
                 <div>Next</div>

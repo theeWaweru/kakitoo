@@ -64,25 +64,6 @@ export default function Home() {
               </Link>
             </div>
           </form>
-
-          {/* <div className="form-registration">
-            <div className="text-input-heading">Enter the Username</div>
-            <input
-              type="text"
-              className="text-input w-input"
-              maxLength={256}
-              name="name-3"
-              data-name="Name 3"
-              placeholder=""
-              id="name-3"
-            />
-            <Link href="/phone-number">
-              <a className="link-block form-submit w-inline-block">
-                <div>Next</div>
-              </a>
-            </Link>
-            
-          </div> */}
         </div>
       </div>
       <div className="pic-div">

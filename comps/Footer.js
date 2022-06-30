@@ -3,9 +3,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="footer">
-      <p href="#" className="footer-links w-inline-block">
-        <div>© 2022 Kakitoo Ltd. All rights reserved.</div>
-      </p>
+      <div href="#" className="footer-links w-inline-block">
+        © 2022 Kakitoo Ltd. All rights reserved.
+      </div>
       <div className="left-footer-side">
         <Link href="/terms-of-service">
           <a className="footer-links w-inline-block">

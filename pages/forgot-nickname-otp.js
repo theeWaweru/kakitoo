@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Nav from "../comps/Nav";
 import Image from "next/image";
-import App from "./otpjs";
+import App from "./otp-app";
 
 const forgotNicknameotp = () => {
   return (
