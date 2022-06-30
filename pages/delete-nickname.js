@@ -21,7 +21,7 @@ const deleteNickname = () => {
               name="Phone-Deregistration-Form"
               data-name="Phone Deregistration Form"
               method="post"
-              action="/otp"
+              action="/delete-nickname-otp"
             >
               <label className="text-input-heading" htmlFor="phone-number">
                 Enter your phone number
