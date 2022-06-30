@@ -41,19 +41,32 @@ const otp = () => {
             <div className="title-text">You will receive an SMS</div>
           </div>
           <div className="sub-text">It&apos;s to confirm your number</div>
-
-          <form className="form-registration">
+          
+          {/* below is the otp app */}
+          <form id="nickname-otp" className="form-registration">
             <div className="text-input-heading">Enter your OTP</div>
             
             {/* this is the OTP app below */}
             <App />
 
-            <Link href="/finish-registration">
-              <a className="link-block form-submit w-inline-block">
-                <div>Next</div>
-              </a>
-            </Link>
+            <input
+                type="submit"
+                value="Next"
+                data-wait="Please wait..."
+                className="link-block form-submit w-inline-block"
+              />
+            <div className="success-message w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div className="error-message w-form-fail">
+              <div>
+                Oops! Something went wrong.
+                <br />
+                Check your details and try again.
+              </div>
+            </div>
           </form>
+
         </div>
       </div>
       <div className="pic-div">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav>
+    <nav style={{width:'100%'}}>
       <Link href="/">
         <a>
           <div className="kakitoo-svg-logo w-embed">

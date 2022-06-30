@@ -7,7 +7,7 @@ export default function App() {
   const handleChange = (code) => setCode(code);
 
   return (
-    <div className="otp-app">
+    <div className="otp-app" id="otp-app">
       <OtpInput
         value={code}
         onChange={handleChange}

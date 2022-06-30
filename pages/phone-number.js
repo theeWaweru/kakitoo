@@ -8,6 +8,8 @@ const phoneNumber = () => {
       <div className="details-div">
         <div className="details-div-holder">
           <Nav />
+          
+          
           <div className="process-timeline">
             <div className="number-div">
               <div className="number current">
@@ -36,13 +38,16 @@ const phoneNumber = () => {
               </div>
             </div>
           </div>
+
+          
           <div className="title-div">
             <div className="title-text">We need your phone number</div>
           </div>
           <div className="sub-text">It links with your username</div>
-          <div className="w-form form-registration">
+          
+          
+          <div id="phone-registration-form" className="w-form form-registration">
             <form
-              id="phone-registration-form"
               name="Phone-Registration-Form"
               data-name="Phone Registration Form"
               method="post"
@@ -86,7 +91,7 @@ const phoneNumber = () => {
               </label>
               <input
                 type="submit"
-                defaultValue="Next"
+                value="Next"
                 data-wait="Please wait..."
                 className="submit-button w-button link-block form-submit"
               />
@@ -102,6 +107,8 @@ const phoneNumber = () => {
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
       <div className="pic-div">

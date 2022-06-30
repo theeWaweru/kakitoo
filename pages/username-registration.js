@@ -8,6 +8,8 @@ export default function Home() {
       <div className="details-div">
         <div className="details-div-holder">
           <Nav />
+
+
           <div className="process-timeline">
             <div className="number-div">
               <div className="number current">
@@ -36,10 +38,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+          
+          
           <div className="title-div">
             <div className="title-text">Welcome! First thing first...</div>
           </div>
           <div className="sub-text">Think of a unique username.</div>
+
 
           <form className="form-registration" action="/phone-number" id="username-reg">
             <label className="text-input-heading" htmlFor="#username-reg">
@@ -47,14 +52,14 @@ export default function Home() {
             </label>
             <input
               className="text-input"
-              type="tel"
-              id="phone"
-              name="phone"
+              type="text"
+              id="username"
+              name="username"
               placeholder="e.g Job24"
               pattern="[a-z]{3}[a-z,0-9]{0-7}"
               minLength={4}
             />
-            <input className="link-block" type="submit" defaultValue="Next" />
+            <input className="link-block" type="submit" value="Next" data-wait="Please wait..." />
             <div className="text-link-div">
               <Link href="/forgot-nickname">
                 <a className="text-link">Forgot Username?</a>

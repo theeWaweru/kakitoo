@@ -13,24 +13,21 @@ const forgotNicknameotp = () => {
             <div className="title-text">You will receive an SMS</div>
           </div>
           <div className="sub-text">It&apos;s to confirm your number</div>
-          <form className="form-registration">
+
+          {/* below is the otp app */}
+          <form id="forgot-nickname-otp" className="form-registration">
             <div className="text-input-heading">Enter your OTP</div>
+            
+            {/* this is the OTP app below */}
             <App />
-            {/* <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className="link-block form-submit"
-            >
-              Next
-            </Button> */}
+
             <Link href="/finish-registration">
               <a className="link-block form-submit w-inline-block">
                 <div>Next</div>
               </a>
             </Link>
           </form>
+          
         </div>
       </div>
       <div className="pic-div">
